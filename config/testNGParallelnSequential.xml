@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG" parallel="tests">
+	<test name="Test Annotations" parallel="classes">
+		<classes>
+			<class name="testNG.TestNGAnnotations" />
+			<class name="testNG.TestGroupingNew" />
+			<class name="testNG.TestGrouping" />
+		</classes>
+	</test>
+	
+	<test name="Test Annotations sequential" preserve-order="true"> <!-- parallel="false" also works -->
+		<classes>
+			<class name="testNG.TestNGAnnotations" />
+			<class name="testNG.TestGroupingNew" />
+			<class name="testNG.TestGrouping" />
+		</classes>
+	</test>
+	
+</suite>
